@@ -10,7 +10,7 @@ import (
 // TestGrpcLog test for grpc log
 func TestGrpcLog(t *testing.T) {
 	log := zap.InitLog("", "info")
-	log.Infof("infof")
+	log.Infof("infof, add sth")
 	log.Info("info")
 	log.InfoContextf(context.TODO(), "infoContext")
 	log.Error("error")
