@@ -26,8 +26,3 @@ jobs:
 
     - name: Test
       run: go test -v ./... -covermode=count -coverprofile=coverage.out
-      
-    - name: Code Coverage Report
-      uses: romeovs/lcov-reporter-action@v0.2.11
-      with:
-        lcov-file: coverage.out
