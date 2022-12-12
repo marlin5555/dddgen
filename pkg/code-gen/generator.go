@@ -20,9 +20,6 @@ import (
 )
 
 func main() {
-	_ = os.MkdirAll(util.EntityPath, 0777)
-	_ = os.MkdirAll(util.EntityBasePath, 0777)
-
 	path := "./meta/example-1/entity"
 	gendir := "gen/example-1"
 	pkgs, err := packages.Load(&packages.Config{Mode: packages.NeedImports | packages.NeedName |
